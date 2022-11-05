@@ -1,0 +1,27 @@
+@mixin font($fs, $fw, $lh, $ls) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin halffont($fs, $lh, $ls) {
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin wsh ($fs, $fw, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin sizes ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin border ($color) {
+    border: 1px solid $color;
+}

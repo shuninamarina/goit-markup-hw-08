@@ -1,0 +1,70 @@
+.features {
+    padding: 60px 0;
+
+    @media screen and (min-width:$desktop) {
+
+        padding: 94px 0 47px 0;
+    }
+
+}
+
+.features-list {
+    @media screen and (min-width:$tablet) {
+        margin: -15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.features-list__item {
+    @include font (14px, 400, 1.71, 0.03em);
+             color: $contacts-list-color;   
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width:$tablet) {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+
+    }
+}
+
+.features-list__icon-wrapper {
+display: flex;
+    
+        align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    margin-bottom: 30px;
+    background-color:$about-team-background-color;
+    border-radius: 4px;
+}
+
+.features-list__icon {
+    align-items: center;
+}
+
+.features-list__subtitle {
+    @include font (14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    color: $title-color;
+    text-align: center;
+
+    @media screen and (min-width:$tablet) {
+        text-align: left;
+    }
+}
+
+.features-list__text {
+@include halffont (14px, 1.71, 0.03em);
+        color: $contacts-list-color;
+}
