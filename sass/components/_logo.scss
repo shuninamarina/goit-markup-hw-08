@@ -1,38 +1,36 @@
 .page-header__header-logo {
-    @include font (26px, 700, 1.2, 0.03em);
-    font-family: Raleway;
-    text-decoration: none;
-    display: block;
-    padding: 25px 0;
+  @include font(26px, 700, 1.2, 0.03em);
+  font-family: Raleway;
+  text-decoration: none;
+  display: block;
+  padding: 25px 0;
 }
 .header-logo {
-    @include font (26px, 700, 1.2, 0.03em);
-    font-family: Raleway;
-    text-decoration: none;
-    display: block;
-
+  @include font(26px, 700, 1.2, 0.03em);
+  font-family: Raleway;
+  text-decoration: none;
+  display: block;
 }
 .logo-web {
-    color: $accent-color;
+  color: $accent-color;
 }
 .logo-studio {
-    color: $secondary-color;
+  color: $secondary-color;
 }
 .footer__logo {
-    
-    @include font (24px, 700, 1.17, 0.03em);
-    font-family: Raleway;
-    text-decoration: none;
+  @include font(24px, 700, 1.17, 0.03em);
+  font-family: Raleway;
+  text-decoration: none;
 
-@media screen and (min-width:$desktop) {
-        @include font (26px, 700, 1.2, 0.03em);
-    }
+  @media screen and (min-width: $desktop) {
+    @include font(26px, 700, 1.2, 0.03em);
+  }
 }
 
 .footer-web {
-    color: $accent-color;
+  color: $accent-color;
 }
 
 .footer-studio {
-    color: $primary-color;
+  color: $primary-color;
 }
