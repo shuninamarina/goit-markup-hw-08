@@ -1,0 +1,80 @@
+.hero {
+    background-color: $first-background-color;
+    padding: 118px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/mobile/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    @media screen and (min-width:$tablet) {
+            max-width: 768px;
+        }
+    @media screen and (min-width:$desktop) {
+            max-width: 1600px;
+            padding: 200px 0;
+        }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+screen and (min-resolution: 192dpi) and (min-width: 320px),
+screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/mobile/hero@2x.jpg);
+    }
+}
+
+@media screen and (min-width:$tablet) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/tablet/hero.jpg)
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/tablet/hero@2x.jpg);
+    }
+}
+@media screen and (min-width:1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/desktop/hero.jpg)
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/desktop/hero@2x.jpg);
+    }
+}
+
+.hero__text {
+    @include font (26px, 900, 1.61, 0.06em);
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin: 0 auto 30px;
+    width: 360px;
+
+    @media screen and (min-width:$desktop) {
+            @include font (44px, 900, 1.36, 0.06em);
+            width: 696px;
+        }
+}

@@ -1,4 +1,4 @@
-.navigation-contacts {
+.navigation-contact {
   display: none;
   margin-top: auto;
   @media screen and (min-width: $tablet) {
@@ -7,7 +7,7 @@
     display: block;
   }
 }
-.contacts__list {
+.contact-nav-list {
   margin-bottom: 64px;
 
   @media screen and (min-width: $tablet) {
@@ -22,11 +22,12 @@
 
   & a:hover,
   & a:focus {
-    color: $accent-color;
+    color: $brand-color;
   }
 }
-.contacts__item {
+.contact-nav__item {
   display: flex;
+
   &:not(:last-child) {
     margin-bottom: 32px;
 
@@ -41,7 +42,7 @@
   }
 }
 
-.contacts__icon {
+.contact__icon {
   display: none;
 
   @media screen and (min-width: $tablet) {
@@ -53,35 +54,36 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    fill: $accent-color;
+    fill: $brand-color;
   }
 }
 
-.contacts__link {
+.contact__link {
   @extend %flex;
   @include wsh(14px, 500, 1.14);
-  color: $contacts-list-color;
+  color: $foreground-color2;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: $brand-color;
   }
 
   @media screen and (min-width: $desktop) {
     @include font(14px, 500, 1.33, 0.02em);
+    padding: 32px 0;
   }
 }
 
-.contacts-list__icon--envelope {
+.contact-list__icon--mail {
   @media screen and (min-width: $tablet) {
     width: 14px;
     height: 10px;
   }
 }
 
-.contacts-list__icon--phone {
+.contact-list__icon--phone {
   @media screen and (min-width: $tablet) {
     width: 10px;
     height: 14px;

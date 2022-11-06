@@ -11,65 +11,73 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-
     <link rel="stylesheet" href="./css/main.min.css">
-    <title>Portfolio</title>
+    <title>WebStudio</title>
 </head>
 
 <body>
-    <!--Шапка-->
-    <header class="header">
-        <div class="container header__container">
-            <a href="./index.html" class="header-logo header__header-logo"> <span class="logo-web">Web</span><span
-                    class="logo-studio">Studio</span></a>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="container header">
+            <a href="./index.html" class="logo header__logo">Web<span class="logo__part">Studio</span></a>
+
             <button type="button" class="menu-toggle js-open-menu" aria-expanded="false"
                 aria-controls="mobile-menu"><svg width="24" height="16">
-                    <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
+                    <use href="./images/sprite.svg#icon-menu" class="icon-menu"></use>
                 </svg></button>
-            <!-- Мобильное меню -->
+
+            <!-- MOB MENU -->
 
             <div class="menu-container js-menu-container" id="mobile-menu">
                 <button type="button" class="menu-toggle js-close-menu" aria-expanded="false"
                     aria-controls="mobile-menu"><svg width="24" height="16">
-                        <use href="./images/icons.svg#icon-cross" class="icon-close"></use>
+                        <use href="./images/sprite.svg#icon-cross" class="icon-close"></use>
                     </svg></button>
+
+
                 <div class="menu-content">
-                    <!-- <div class="menu-nav"> -->
                     <nav>
-                        <ul class="mobile-nav list">
-                            <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link link">Студія</a>
+                        <ul class="mobile-navigation list">
+                            <li class="mobile-navigation__item"><a href="./index.html"
+                                    class="mobile-navigation__link  link">Студія</a>
                             </li>
-                            <li class="mobile-nav__item"><a href="./portfolio.html"
-                                    class="mobile-nav__link mobile-nav__link--current link">Портфоліо</a>
+                            <li class="mobile-navigation__item"><a href="./portfolio.html"
+                                    class="mobile-navigation__link mobile-navigation__link--current link">Портфоліо</a>
                             </li>
-                            <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакти</a></li>
+                            <li class="mobile-navigation__item"><a href=""
+                                    class="mobile-navigation__link link">Контакти</a>
+                            </li>
                         </ul>
                     </nav>
-                    <!-- </div> -->
+
 
                     <div class="menu-contacts">
-                        <ul class="contacts-list list">
-                            <li class="contacts-list__item">
+                        <ul class="contact-list list">
+                            <li class="contact-list__item">
                                 <a href="tel:+380961111111"
-                                    class="contacts-list__link contacts-list__link--big-size link contacts__link--accent-color">+38
+                                    class="contact-list__link contact-list__link--big link contact-list__link--accent">+38
                                     096
                                     111 11
                                     11</a>
                             </li>
-                            <li class="contacts-list__item">
+                            <li class="contact-list__item">
                                 <a href="mailto:info@devstudio.com"
-                                    class="contacts-list__link contacts-list__link--medium-size link">info@devstudio.com</a>
+                                    class="contact-list__link contact-list__link--medium link">info@devstudio.com</a>
                             </li>
                         </ul>
                         <ul class="mobile-social list">
-                            <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram</a></li>
-                            <li class="mobile-social__item"><a href="" class="mobile-social__link">Twitter</a></li>
-                            <li class="mobile-social__item"><a href="" class="mobile-social__link">Facebook</a></li>
-                            <li class="mobile-social__item"><a href="" class="mobile-social__link">LinkedIn</a></li>
+                            <li class="mobile-social__item"><a href="#" class="mobile-social__link">Instagram</a></li>
+                            <li class="mobile-social__item"><a href="#" class="mobile-social__link">Twitter</a></li>
+                            <li class="mobile-social__item"><a href="#" class="mobile-social__link">Facebook</a></li>
+                            <li class="mobile-social__item"><a href="#" class="mobile-social__link">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+
+
             <nav class="navigation">
                 <ul class="navigation__list list">
                     <li class="navigation__item"> <a href="./index.html">Студія</a></li>
@@ -77,21 +85,21 @@
                     <li class="navigation__item"> <a href="">Контакти</a></li>
                 </ul>
             </nav>
-            <div class="navigation-contacts">
-                <ul class="contacts__list list">
-                    <li class="contacts__item">
-                        <a href="mailto:info@devstudio.com" class="contacts__link">
-                            <svg class="contacts__icon contacts-list__icon--envelope" width="16" height="12">
-                                <use href="./images/icons.svg#icon-envelope">
+            <div class="navigation-contact">
+                <ul class="contact-nav-list list">
+                    <li class="contact-nav__item">
+                        <a href="mailto:info@devstudio.com" class="contact__link">
+                            <svg class="contact__icon contact-list__icon--mail" width="16" height="12">
+                                <use href="./images/sprite.svg#icon-envelope">
                                 </use>
                             </svg>
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="contacts__item">
-                        <a href="tel:+380961111111" class="contacts__link">
-                            <svg class="contacts__icon contacts-list__icon--phone" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone">
+                    <li class="contact-nav__item">
+                        <a href="tel:+380961111111" class="contact__link">
+                            <svg class="contact__icon contact-list__icon--phone" width="10" height="16">
+                                <use href="./images/sprite.svg#icon-smartphone">
                                 </use>
                             </svg>
                             +38 096 111 11 11
@@ -101,8 +109,10 @@
             </div>
         </div>
     </header>
+
+    <!-- PROJECTS -->
     <main>
-        <section class="section">
+        <section class="projects section">
             <div class="container">
                 <h1 class="visually-hidden">Фільтри</h1>
                 <ul class="filters__list list">
@@ -132,8 +142,8 @@
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project__content">
-                                <h2 class="project__name">Технокряк</h2>
+                            <div class="project__thumb">
+                                <h2 class="project__title">Технокряк</h2>
                                 <p class="project__type">Веб-сайт</p>
                             </div>
                         </a>
@@ -157,8 +167,8 @@
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project__content">
-                                <h2 class="project__name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                            <div class="project__thumb">
+                                <h2 class="project__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
                                 <p class="project__type">Дизайн</p>
                             </div>
                         </a>
@@ -182,8 +192,8 @@
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project__content">
-                                <h2 class="project__name">Ресторан <span lang="en">Seafood</span></h2>
+                            <div class="project__thumb">
+                                <h2 class="project__title">Ресторан <span lang="en">Seafood</span></h2>
                                 <p class="project__type">Додаток</p>
                             </div>
                         </a>
@@ -206,8 +216,8 @@
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project__content">
-                                <h2 class="project__name">Проєкт <span lang="en">Prime</span></h2>
+                            <div class="project__thumb">
+                                <h2 class="project__title">Проєкт <span lang="en">Prime</span></h2>
                                 <p class="project__type">Маркетинг</p>
                             </div>
                         </a>
@@ -230,8 +240,8 @@
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project__content">
-                                <h2 class="project__name">Проєкт <span lang="en">Boxes</span></h2>
+                            <div class="project__thumb">
+                                <h2 class="project__title">Проєкт <span lang="en">Boxes</span></h2>
                                 <p class="project__type">Додаток</p>
                             </div>
                         </a>
@@ -255,8 +265,8 @@
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project__content">
-                                <h2 lang="en" class="project__name">Inspiration has no Borders</h2>
+                            <div class="project__thumb">
+                                <h2 lang="en" class="project__title">Inspiration has no Borders</h2>
                                 <p class="project__type">Веб-сайт</p>
                             </div>
                         </a>
@@ -280,8 +290,8 @@
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project__content">
-                                <h2 class="project__name">Видання <span lang="en">Limited Edition</span></h2>
+                            <div class="project__thumb">
+                                <h2 class="project__title">Видання <span lang="en">Limited Edition</span></h2>
                                 <p class="project__type">Дизайн</p>
                             </div>
                         </a>
@@ -304,8 +314,8 @@
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project__content">
-                                <h2 class="project__name">Проєкт <span lang="en">LAB</span></h2>
+                            <div class="project__thumb">
+                                <h2 class="project__title">Проєкт <span lang="en">LAB</span></h2>
                                 <p class="project__type">Маркетинг</p>
                             </div>
                         </a>
@@ -329,8 +339,8 @@
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="project__content">
-                                <h2 lang="en" class="project__name">Growing Business</h2>
+                            <div class="project__thumb">
+                                <h2 lang="en" class="project__title">Growing Business</h2>
                                 <p class="project__type">Додаток</p>
                             </div>
                         </a>
@@ -341,9 +351,9 @@
     </main>
     <footer class="footer">
         <div class="container footer__container">
-            <div class="footer__address">
-                <a href="./index.html" class="footer__logo footer__footer-logo"> <span
-                        class="footer-web">Web</span><span class="footer-studio">Studio</span></a>
+            <div class="footer__contacts">
+                <a href="./index.html" class="footer__logo footer__footer-logo">Web<span
+                        class="footer-logo__part">Studio</span></a>
                 <address class="address__contact">
                     <ul class="footer__list">
                         <li class="footer__item list">
@@ -365,40 +375,43 @@
                     <li class="footer-social__item">
                         <a href="" class="footer-social__link">
                             <svg class="footer-social__icon social-icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram"></use>
+                                <use href="./images/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social__item">
                         <a href="" class="footer-social__link">
                             <svg class="footer-social__icon social-icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter"></use>
+                                <use href="./images/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social__item">
                         <a href="" class="footer-social__link">
                             <svg class="footer-social__icon social-icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook"></use>
+                                <use href="./images/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social__item">
                         <a href="" class="footer-social__link">
                             <svg class="footer-social__icon social-icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="subscribe">
-                <h2 class="subscribe__text">підпишіться на розсилку</h2>
-                <form class="form-subscribe">
-                    <input type="email" name="email" class="subscribe-input" placeholder="E-mail">
-                    <button type="submit" class="subscribe-btn primary-button--flex">Підписатися<svg class="icon-send"
-                            width="24" height="24">
-                            <use href="./images/icons.svg#icon-icon-send">
+
+            <!-- SUBSCRIBE -->
+
+            <div class="subscribtion">
+                <h2 class="subscribtion__title">Підпишіться на розсилку</h2>
+                <form class="form-subscribtion">
+                    <input type="email" name="email" class="subscribtion-input" placeholder="E-mail">
+                    <button type="submit" class="subscribtion-button">Підписатися<svg class="icon-send" width="24"
+                            height="24">
+                            <use href="./images/sprite.svg#icon-icon-send">
                             </use>
                         </svg></button>
                 </form>

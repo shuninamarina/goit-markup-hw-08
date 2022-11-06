@@ -1,199 +1,200 @@
 .modal {
-    position: absolute;
-    width: calc(100% - 30px);
-    background: $primary-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    top: 50%;
-    left: 50%;
-    transform: scale(1) translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 40px;
-    width: calc(100% - 30px);
+  position: absolute;
+  width: calc(100% - 30px);
+  background: $background-color1;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
+  width: calc(100% - 30px);
 
-    @media screen and (min-width:$tablet) {
-            width: 450px;
-        }
-    
-        @media screen and (min-width:$desktop) {
-            width: 528px;
-        }
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
 }
 
 .modal__close {
-    @extend %flex;
-    @include sizes (30px, 30px);
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    padding: 6px;
-    color: $accent-color;
-    background-color: $primary-color;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
+  @extend %flex;
+  @include sizes(30px, 30px);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 6px;
+  color: $brand-color;
+  background-color: $background-color1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-&:focus {
-        fill: currentColor;
-        border: 1px solid $accent-color;
-    }
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: currentColor;
+    border: 1px solid $brand-color;
+  }
 }
 
 .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.modal__text {
-    @include font (20px, 700, 1.5, 0.03em);
-    position: relative;
-    text-align: center;
-    color: $title-color;
-    margin-bottom: 12px;
+.modal__title {
+  @include font(20px, 700, 1.5, 0.03em);
+  position: relative;
+  text-align: center;
+  color: $foreground-color1;
+  margin-bottom: 12px;
 
-    @media screen and (min-width:$desktop) {
-            @include font (20px, 700, 1.15, 0.03em);
-        }
+  @media screen and (min-width: $desktop) {
+    @include font(20px, 700, 1.15, 0.03em);
+  }
 }
 
 .modal__form {
-    display: block;
+  display: block;
 }
 
 .form-field {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .comment-field {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .comment-field__text {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4px;
-    @include halffont (12px, 1.17, 0.01em);
-    color: $contacts-list-color;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  @include halffont(12px, 1.17, 0.01em);
+  color: $foreground-color2;
 }
 
 .form-field__label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4px;
-    @include halffont (12px, 1.17, 0.01em);
-    color: $contacts-list-color;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  @include halffont(12px, 1.17, 0.01em);
+  color: $foreground-color2;
 }
 
 .form-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .form-wrapper__input {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 0;
-    width: 100%;
-    font-size: 14px;
-    color: $secondary-color;
-    padding: 12px 42px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-&:hover,
-&:focus {
-        outline: 0;
-        border: 1px solid $accent-color;
-    }
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+  color: $brand-color;
+  padding: 12px 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  &:hover,
+  &:focus {
+    outline: 0;
+    border: 1px solid $brand-color;
+  }
 }
 
 .comment-field__message {
-    @include sizes (100%, 120px);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 12px 16px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    resize: none;
-    color: $secondary-color;
-&:hover,
-&:focus {
-        outline: 0;
-        border: 1px solid $accent-color;
-    }
+  @include sizes(100%, 120px);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  resize: none;
+  color: $brand-color;
+  &:hover,
+  &:focus {
+    outline: 0;
+    border: 1px solid $brand-color;
+  }
 }
 
 .comment-field__message::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-    @include halffont (14px, 1.17, 0.01em);
-    text-align: left;
-    vertical-align: top;
+  color: rgba(117, 117, 117, 0.5);
+  @include halffont(14px, 1.17, 0.01em);
+  text-align: left;
+  vertical-align: top;
 }
 
 .checkbox-field {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        outline 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 30px;
-    justify-content: center;
-    @extend %flex;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 30px;
+  justify-content: center;
+  @extend %flex;
 }
 
 .checkbox-field__input {
-    position: absolute;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .checkbox-field__text {
-    @extend %flex;
-    @include halffont (12px, 1.16, 0.03em);
-    color: $contacts-list-color;
-    @media screen and (min-width:$desktop) {
-        @include halffont (14px, 1.7, 0.03em);}
-&::before {
-        content: "";
-        @include sizes (16px, 15px);
-        border: 1px solid $title-color;
-        margin-right: 7px;
-        display: block;
-        border-radius: 2px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-.checkbox-field__input:checked:focus+&::before {
-    background-color: $accent-color;
+  @extend %flex;
+  @include halffont(12px, 1.16, 0.03em);
+  color: $foreground-color2;
+  @media screen and (min-width: $desktop) {
+    @include halffont(14px, 1.7, 0.03em);
+  }
+  &::before {
+    content: '';
+    @include sizes(16px, 15px);
+    border: 1px solid $foreground-color1;
+    margin-right: 7px;
+    display: block;
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .checkbox-field__input:checked:focus + &::before {
+    background-color: $brand-color;
     background-image: url(../images/check.svg);
     background-size: cover;
     background-origin: border-box;
     background-position: center;
     background-repeat: no-repeat;
     border: none;
-}
+  }
 }
 
 .agreement {
-    margin-left: 5px;
-    text-decoration-line: underline;
-    text-decoration-skip-ink: none;
-    color: $accent-color;
+  margin-left: 5px;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+  color: $accent-color;
 }
 
 .form-wrapper__icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    fill: $title-color;
-.form-wrapper__input:hover+&,
-.form-wrapper__input:focus+& {
-        fill: $accent-color;
-    }
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: $foreground-color1;
+  .form-wrapper__input:hover + &,
+  .form-wrapper__input:focus + & {
+    fill: $brand-color;
+  }
 }

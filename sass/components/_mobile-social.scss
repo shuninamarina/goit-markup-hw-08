@@ -1,32 +1,30 @@
 .mobile-social {
-    display: flex;
+  display: flex;
 }
 .mobile-social__item {
-    @include font (18px, 500, 1.22, 0.02em);
-    &::after {
-            content: '';
-            transform: rotate(90deg);
-            border-right: 1px solid rgba($title-color, 0.2);
-            @include sizes (100%, 4px);
-            background-color: rgba($title-color, 0.2);
-            margin-left: 10px;
-        }
-    
-    &:not(:last-child) {
-        margin-right: 10px;
-    
-      
-    }
-          &:last-child::after {
-            border: none;
-          }
+  @include font(18px, 500, 1.22, 0.02em);
+  &::after {
+    content: '';
+    transform: rotate(90deg);
+    border-right: 1px solid rgba($foreground-color1, 0.2);
+    @include sizes(100%, 4px);
+    background-color: rgba($foreground-color1, 0.2);
+    margin-left: 10px;
+  }
 
-    @media screen and (max-width: 479px) {
-        margin-bottom: 10px;
-    }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:last-child::after {
+    border: none;
+  }
+
+  @media screen and (max-width: 479px) {
+    margin-bottom: 10px;
+  }
 }
 
 .mobile-social__link {
-    color: $accent-color;
-    text-decoration: none;
+  color: $brand-color;
+  text-decoration: none;
 }

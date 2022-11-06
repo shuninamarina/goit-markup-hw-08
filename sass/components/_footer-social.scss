@@ -1,60 +1,59 @@
 .footer-social {
-    @media screen and (max-width:767px) {
-            margin: 60px auto 0;
-        }
-    
-        @media screen and (min-width: $desktop) {
-            margin-right: 0, auto;
-        }
+  @media screen and (max-width: 767px) {
+    margin: 60px auto 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 0, auto;
+  }
 }
-.footer__address {
-    @media screen and (min-width: $tablet) {
-            margin-right: auto;
-        }
-   
+.footer__contacts {
+  @media screen and (min-width: $tablet) {
+    margin-right: auto;
+  }
 }
 
 .footer-social__title {
-    @include halffont (14px, 1.14, 0.03em);
-    text-align: center;
-    text-transform: uppercase;
-    color: $primary-color;
-    margin-bottom: 20px;
-    
-    @media screen and (min-width:$desktop) {
-            text-align: left;
-        }
+  @include halffont(14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  color: $background-color1;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .footer-social__list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-social__item {
-    @include sizes (44px, 44px);
-&:not(:last-child) {
+  @include sizes(44px, 44px);
+  &:not(:last-child) {
     margin-right: 10px;
-    }
+  }
 }
 
 .footer-social__icon {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 .social-icon {
-    fill: currentColor;
+  fill: currentColor;
 }
 .footer-social__link {
-    @extend %flex;
-    @include sizes (100%, 100%);
-    justify-content: center;
-    color: $primary-color;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-&:hover,
-&:focus {
-        background-color: $accent-color;
-        color: $primary-color;
-    }
+  @extend %flex;
+  @include sizes(100%, 100%);
+  justify-content: center;
+  color: $background-color1;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+    color: $background-color1;
+  }
 }

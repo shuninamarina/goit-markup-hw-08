@@ -11,16 +11,16 @@
   }
 
   @media screen and (min-width: $desktop) {
-    // margin-left: 93px;
+    //  margin-left: 93px;
   }
   & a:hover,
   & a:focus {
-    color: $accent-color;
+    color: $brand-color;
   }
 }
 
 .navigation__list .link-current {
-  color: $accent-color;
+  color: $brand-color;
 }
 
 .navigation__item {
@@ -38,7 +38,7 @@
 
 .navigation__item a {
   @include wsh(14px, 500, 1.14);
-  color: $title-color;
+  color: $foreground-color1;
   text-decoration: none;
   display: block;
   position: relative;
@@ -49,11 +49,11 @@
   }
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: $brand-color;
   }
 
   &link-current {
-    color: $accent-color;
+    color: $brand-color;
   }
 
   @media screen and (max-width: 767px) {
@@ -63,12 +63,12 @@
   }
 }
 .navigation__list .link-current::after {
-  content: "";
+  content: '';
   display: block;
   @include sizes(100%, 4px);
   position: absolute;
   bottom: 0;
   left: 0;
   border-radius: 2px;
-  background-color: $accent-color;
+  background-color: $brand-color;
 }

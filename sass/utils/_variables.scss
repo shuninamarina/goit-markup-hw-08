@@ -1,17 +1,20 @@
- $primary-color: #ffffff;
- $title-color: #212121;
- $first-background-color: #2f303a;
- $contacts-list-color: #757575;
- $accent-color: #2196f3;
- $secondary-color: #000000;
- $footer-contact-color: rgba(255, 255, 255, 0.6);
- $border-solid-color: #eeeeee;
- $border-bottom-color: #ececec;
- $about-team-background-color: #f5f4fa;
- $hero-button-background-color: #188CE8;
- $our-clients-logo-color: #AFB1B8;
- // ------- BREAKPOINTS -----------
+$background-color1: #ffffff;
+$foreground-color1: #212121;
 
- $mobile: 480px;
- $tablet: 768px;
- $desktop: 1200px;
+$background-color3: #2f303a;
+
+$foreground-color2: #757575;
+$brand-color: #2196f3;
+$black-color: #000000;
+$footer-contact-color: rgba(255, 255, 255, 0.6);
+$border-solid-color: #eeeeee;
+$border-bottom-color: #ececec;
+$background-color2: #f5f4fa;
+
+$button: #188ce8;
+$logo-color: #afb1b8;
+// ------- break points -----------
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

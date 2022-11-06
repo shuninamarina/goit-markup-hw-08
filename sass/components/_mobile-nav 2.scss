@@ -1,0 +1,29 @@
+.mobile-nav__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    color: $title-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.mobile-nav__link {
+    @include font (40px, 500, 1.175, 0.02em);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    &--current {
+        color: $accent-color;
+    }
+
+    color: currentColor;
+}
