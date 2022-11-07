@@ -160,7 +160,7 @@
     @include halffont(14px, 1.7, 0.03em);
   }
   &::before {
-    content: '';
+    content: "";
     @include sizes(16px, 15px);
     border: 1px solid $foreground-color1;
     margin-right: 7px;
@@ -183,7 +183,7 @@
   margin-left: 5px;
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
-  color: $accent-color;
+  color: $brand-color;
 }
 
 .form-wrapper__icon {

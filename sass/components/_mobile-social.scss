@@ -4,7 +4,7 @@
 .mobile-social__item {
   @include font(18px, 500, 1.22, 0.02em);
   &::after {
-    content: '';
+    content: "";
     transform: rotate(90deg);
     border-right: 1px solid rgba($foreground-color1, 0.2);
     @include sizes(100%, 4px);
@@ -20,7 +20,7 @@
   }
 
   @media screen and (max-width: 479px) {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
   }
 }
 
